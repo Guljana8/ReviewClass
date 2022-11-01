@@ -1,0 +1,41 @@
+Final keyword:
+Final prevents inheritance.
+Final means something complete.
+Final cannot be override.
+
+
+Abstract:
+Abstract means something incomplete.
+Abstract class must participate an inheritance. There is no way abstract class can be final.
+Abstract methods must be implemented inside the Child class.
+In Java to implement the abstraction we have 2 features:
+1) Classes
+2) Interfaces: -> with interfaces we can achieve 100% of abstraction. Interfaces abstract by default
+Abstraction is collection of methods.
+
+
+Interface:
+Interface is similar to a class which is will be  a collection of public static final variables(constants) and public abstract classes.
+All variables inside interfaces are static, public and final this is why we must assign a value to them.
+Interfaces cannot have instance variables.
+Inside the Interfaces WE CANNOT HAVE A CONSTRUCTOR.
+
+Interfaces was created to achieve 100% of an abstractions. Before Java 1,8 all methods were abstract, there was no implementation.
+Starting from  Java 1.8 inside Interfaces we can have static methods, we can have default methods. Those methods are methods implemented.
+To add this default methods we need to type "default" as without it compiler will add to the method public and final by default.
+With this the help of default method we can have implemented method inside the interface and we can simply inherit it.
+
+Abstract Class: (used to have 0-100% abstraction)
+- any variable (static, instance)
+- have constructor
+- can have implemented an unimplemented methods
+- methods can have any accessibility (not only public)
+
+Interface :( 100% abstraction)
+- only public static final variables
+- no constructor
+- public abstract methods ONLY UNimplemented
+
+Since Java 8 - we can achieve partial abstraction(Since Java 8 they added static and default methods):
+We can have implemented methods (only static and only default).
+
